@@ -80,7 +80,8 @@ defmodule Wechat.User do
     defstruct city: nil, country: nil, groupid: nil,
       headimgurl: nil, language: nil, nickname: nil, openid: nil,
       province: nil, remark: nil, sex: nil, subscribe: nil,
-      subscribe_time: nil, tagid_list: nil
+      subscribe_time: nil, tagid_list: nil, subscribe_scene: nil,
+      qr_scene: nil, qr_scene_str: nil
   end
 
   defmodule Group do
