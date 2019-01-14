@@ -81,7 +81,7 @@ defmodule Wechat.User do
       headimgurl: nil, language: nil, nickname: nil, openid: nil,
       province: nil, remark: nil, sex: nil, subscribe: nil,
       subscribe_time: nil, tagid_list: nil, subscribe_scene: nil,
-      qr_scene: nil, qr_scene_str: nil
+      qr_scene: nil, qr_scene_str: nil, unionid: nil
   end
 
   defmodule Group do
