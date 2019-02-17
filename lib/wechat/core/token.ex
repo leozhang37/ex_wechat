@@ -213,7 +213,7 @@ defmodule Wechat.Token do
 
   @spec current_timestamp() :: non_neg_integer
   defp current_timestamp() do
-    System.os_time(:seconds)
+    System.os_time(:second)
   end
 
   @spec put_in_waiting(waiting :: map, token_key :: token_key, from :: pid) :: map
