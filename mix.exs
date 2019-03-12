@@ -7,7 +7,7 @@ defmodule Wechat.Mixfile do
     [
       app: :ex_wechat,
       version: @version,
-      elixir: "~> 1.6",
+      elixir: "~> 1.8",
       build_embedded: Mix.env == :prod,
       start_permanent: Mix.env == :prod,
       description: description(),
@@ -16,7 +16,7 @@ defmodule Wechat.Mixfile do
       test_coverage: [tool: ExCoveralls],
       dialyzer: [plt_add_apps: [:iex, :mix, :eex, :plug, :poison],
                  paths: ["_build/dev/lib/ex_wechat/ebin"]],
-      preferred_cli_env: ["coveralls": :test,
+      preferred_cli_env: [coveralls: :test,
                           "coveralls.detail": :test,
                           "coveralls.post": :test,
                           "coveralls.html": :test],
@@ -42,7 +42,7 @@ defmodule Wechat.Mixfile do
   defp deps do
     [
       {:httpoison, "~> 1.1"},
-      {:poison, "~> 3.1"},
+      {:jason, "~> 1.1"},
       {:plug, "~> 1.5"},
       {:floki, "~> 0.20.2"},
 
@@ -52,7 +52,7 @@ defmodule Wechat.Mixfile do
       {:dogma, "~> 0.1.16", only: :dev},
 
       {:excoveralls, "~> 0.8.2", only: :test},
-      {:phoenix, "~> 1.3.2", only: :test}
+      {:phoenix, "~> 1.4.0", only: :test}
     ]
   end
 

@@ -54,7 +54,7 @@ defmodule Wechat.TokenTest do
   defp prepare_for_access_token_cache(data) do
     del_access_token_cache()
     Agent.update @cache, fn _ ->
-      %{{@module, :access_token} => {data, System.os_time(:seconds)}}
+      %{{@module, :access_token} => {data, System.os_time(:second)}}
     end
   end
 end
