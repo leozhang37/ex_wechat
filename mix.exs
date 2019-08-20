@@ -43,7 +43,7 @@ defmodule Wechat.Mixfile do
     [
       {:httpoison, "~> 1.5"},
       {:jason, "~> 1.1"},
-      {:plug, "~> 1.8.1 or ~> 1.9"},
+      {:plug, "~> 1.8"},
       {:floki, "~> 0.20.2"},
 
       {:dialyxir, "~> 0.5.1", only: [:dev], runtime: false},
