@@ -1,7 +1,7 @@
 defmodule Wechat.Mixfile do
   use Mix.Project
 
-  @version "0.2.0"
+  @version "0.2.1"
 
   def project do
     [
@@ -41,9 +41,9 @@ defmodule Wechat.Mixfile do
 
   defp deps do
     [
-      {:httpoison, "~> 1.1"},
+      {:httpoison, "~> 1.5"},
       {:jason, "~> 1.1"},
-      {:plug, "~> 1.5"},
+      {:plug, "~> 1.8.1 or ~> 1.9"},
       {:floki, "~> 0.20.2"},
 
       {:dialyxir, "~> 0.5.1", only: [:dev], runtime: false},
